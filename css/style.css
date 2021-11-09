@@ -8,7 +8,7 @@ nav ul li, nav ul li a {
 /*Mixings para aplicar  li a */
 /* Encabezados y menu navegable*/
 header h1 {
-  font-family:"Zeyada";
+  font-family: "Zeyada";
   font-size: xx-large;
   text-align: center;
   padding: 0.10rem;
@@ -70,7 +70,7 @@ header {
 p {
   text-align: center;
   font-family: "Nanum Myeongjo";
-  font-size: x-small; }
+  font-size: small; }
 
 /*Picture about me*/
 .aboutme {
