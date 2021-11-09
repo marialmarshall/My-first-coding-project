@@ -1,0 +1,36 @@
+/*Bootsrap menu hamburguesa*/
+
+h2{
+    font-size: map-get($map: $sizeletter, $key:medio );
+    font-family: Nanum Myeongjo;
+    display: flex;  
+    margin: auto;
+    justify-content: center;
+    padding:20px;
+   
+
+}
+
+
+
+/*Pictures of Portfolio Bootstrap*/
+
+.carousel-inner{
+    width: 45%;
+    margin: 25px auto;
+    font-family: Zeyada;
+    font-size: map-get($map: $sizeletter, $key:grande);
+
+    
+}
+
+.carousel-inner div:hover{
+    opacity: 0.7;
+    transform: scale(0.98);
+
+}
+
+ h5{
+    font-size: map-get($map: $sizeletter, $key:grande );
+
+}

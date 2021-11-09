@@ -1,0 +1,19 @@
+.firstblog{
+    display: flex;
+    align-items: center;
+
+    &__pic{
+     max-width: 30%;
+     padding: 0.10rem; 
+     display:block;
+     margin: 30px;
+
+    }
+
+    &__intro{
+     font-size: map-get($map: $sizeletter, $key:medio );
+     font-family:Gideon Roman; 
+    }
+
+
+}

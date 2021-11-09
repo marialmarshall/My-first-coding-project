@@ -1,0 +1,33 @@
+/*Picture about me*/
+
+.aboutme{
+    display: flex;
+    align-items: center; 
+   
+
+    &__pic{
+     max-width: 30%;
+     padding: 0.10rem; 
+     display:block;
+     margin: 30px;
+    }
+    &__intro{     
+     font-size: map-get($map: $sizeletter, $key:medio );
+     font-family:Gideon Roman;
+     animation-duration: 1s;
+     animation-name: slidein;
+    }
+
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

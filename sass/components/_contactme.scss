@@ -1,0 +1,114 @@
+
+.contact{
+    &__Grid{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__Grid__Pic{
+        max-width: 95%;  
+        padding: 0.20rem; 
+        margin:20px;
+        align-content: center;
+        justify-content: center;
+    }
+
+}
+
+/*Contact form*/
+
+.contactMe {
+
+    text-align: center;
+    font-size: map-get($map: $sizeletter, $key:mediano );
+    text-decoration: none;
+    letter-spacing: 0.08rem;
+    font-family: $fontfamily-blog-titles-contactme-carousel;
+
+    .contactMeStyle{
+        text-align: center;
+        font-size: map-get($map: $sizeletter, $key:medio );
+        font-family: $fontfamily-blog-titles-contactme-carousel;
+        text-decoration: none;
+        letter-spacing: 0.08rem;
+    }
+
+    .span{
+
+        text-align: center;
+        font-size: map-get($map: $sizeletter, $key:mediano);
+        text-decoration: none;
+        letter-spacing: 0.08rem;
+        font-family: $fontfamily-h2-contactform-socials;
+        display: inline block;
+    }
+
+    
+
+}
+
+
+.contactForm{
+  
+    text-align: center;
+    font-family: $fontfamily-h2-contactform-socials;
+    font-size: map-get($map: $sizeletter, $key:intermedio );
+    width: 75%;
+    margin: 3rem auto;
+    padding: 0.05rem 0.05rem;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    margin:auto;
+
+    form input,textarea{
+        margin: 1rem;
+        padding: 0.05rem;
+        font-family: $fontfamily-h2-contactform-socials;
+        width: auto;
+    }
+
+    form input[type="Submit"] {
+        padding: 15px;
+        font-weight: 300;
+        cursor: pointer;
+        border-color:$color-submitbutton;
+        border-width: 2.5px;
+        border-style:solid;
+        background-color: transparent;
+        font-family: $fontfamily-submit;
+        font-weight: 150;
+        text-transform: uppercase;
+        letter-spacing: .20em;
+        width: 150px;
+        height: auto;
+    }
+
+    .form input:focus, textarea:focus{
+        outline-color: $color-textarea;
+    }
+
+    .form textarea{
+        height: 5rem;
+    }
+
+    .form input:focus, textarea:focus{
+        outline-color: #f9bec7;
+    }
+
+    .form textarea{
+        height: 5rem;
+    }
+
+    .parrafoContact{
+        font-family: $fontfamily-h2-contactform-socials;
+        font-size: map-get($map: $sizeletter, $key:medio );
+    }
+
+    .ContactMe{
+        text-align: center;
+        font-family: $fontfamily-blog-titles-contactme-carousel;
+        font-size: map-get($map: $sizeletter, $key:mediano);
+    }
+
+}

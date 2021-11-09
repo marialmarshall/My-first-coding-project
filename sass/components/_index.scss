@@ -1,0 +1,96 @@
+
+/* Encabezados y menu navegable*/
+
+header{
+    h1{
+        font-family: $fontfamily-blog-titles-contactme-carousel;
+        font-size:map-get($map: $sizeletter, $key:grande );
+        text-align: center;
+        padding: 0.10rem;
+        margin: 30px;
+        font-weight: bolder;
+
+    }
+}
+
+nav{
+    $color-letra-menu-nav: black; 
+    text-decoration: none;
+    font-family: $fontfamily-menu-nav;
+    justify-content: space-evenly; 
+    font-size: map-get($map: $sizeletter, $key:medio );
+    font-family: 'Toma SansSB';
+
+    ul{
+        display: flex;
+        margin:  auto;
+        color: black;  
+        text-decoration: none;
+        font-family: $fontfamily-menu-nav;
+        justify-content: space-evenly; 
+        font-size: map-get($map: $sizeletter, $key:medio );
+      
+
+        li{
+            @extend %flexbox; 
+
+            a{
+                @extend %flexbox;
+
+                &:hover{
+                    color: #f08080;
+                    font-family: $fontfamily-nav;
+                }
+            }
+        }
+    }
+}
+
+
+
+.body{
+    font-family: $fontfamily-nav;
+    line-height: 10px;;
+}
+/*Color que cambia donde nos posicionamos en el menu navegable*/
+.linkActive{
+    color: #f08080;
+}
+
+/*Sticky*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+/*Main de la pagina ppal*/
+.portalImg{
+    display:block;
+    margin: auto;
+    max-width: 95%;
+   
+}
+
+.mySocials{
+    text-align: center;
+    font-family: $fontfamily-h2-contactform-socials;
+    font-size: map-get($map: $sizeletter, $key:medio );
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.socialsLogs{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+p{
+    text-align: center;
+    font-family: $fontfamily-h2-contactform-socials;
+    font-size: map-get($map: $sizeletter, $key:xchico );
+}

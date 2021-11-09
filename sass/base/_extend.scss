@@ -1,0 +1,18 @@
+%flexbox{
+    display :flex;
+    margin: auto;
+    justify-content: center;
+
+
+}
+
+/*Mixings para aplicar  li a */
+@mixin flexbox ($color,$text-decoration ,$font-family, $justify-content, $font-size){
+    color: black;  
+    text-decoration: none;
+    font-family: $fontfamily-nav;
+    justify-content: space-evenly; 
+    font-size: medium;
+    
+}
+

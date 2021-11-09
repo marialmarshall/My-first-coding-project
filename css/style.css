@@ -1,0 +1,229 @@
+/*Variables */
+/*Mapas*/
+nav ul li, nav ul li a {
+  display: flex;
+  margin: auto;
+  justify-content: center; }
+
+/*Mixings para aplicar  li a */
+/* Encabezados y menu navegable*/
+header h1 {
+  font-family: "Zeyada";
+  font-size: xx-large;
+  text-align: center;
+  padding: 0.10rem;
+  margin: 30px;
+  font-weight: bolder; }
+
+nav {
+  text-decoration: none;
+  font-family: "Toma SansSB";
+  justify-content: space-evenly;
+  font-size: medium;
+  font-family: 'Toma SansSB'; }
+  nav ul {
+    display: flex;
+    margin: auto;
+    color: black;
+    text-decoration: none;
+    font-family: "Toma SansSB";
+    justify-content: space-evenly;
+    font-size: medium; }
+    nav ul li a:hover {
+      color: #f08080;
+      font-family: inherit; }
+
+.body {
+  font-family: inherit;
+  line-height: 10px; }
+
+/*Color que cambia donde nos posicionamos en el menu navegable*/
+.linkActive {
+  color: #f08080; }
+
+/*Sticky*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1; }
+
+/*Main de la pagina ppal*/
+.portalImg {
+  display: block;
+  margin: auto;
+  max-width: 95%; }
+
+.mySocials {
+  text-align: center;
+  font-family: "Nanum Myeongjo";
+  font-size: medium;
+  font-weight: bolder;
+  margin: 20px; }
+
+.socialsLogs {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 10px; }
+
+p {
+  text-align: center;
+  font-family: "Nanum Myeongjo";
+  font-size: x-small; }
+
+/*Picture about me*/
+.aboutme {
+  display: flex;
+  align-items: center; }
+  .aboutme__pic {
+    max-width: 30%;
+    padding: 0.10rem;
+    display: block;
+    margin: 30px; }
+  .aboutme__intro {
+    font-size: medium;
+    font-family: Gideon Roman;
+    animation-duration: 1s;
+    animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+/*Bootsrap menu hamburguesa*/
+h2 {
+  font-size: medium;
+  font-family: Nanum Myeongjo;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 20px; }
+
+/*Pictures of Portfolio Bootstrap*/
+.carousel-inner {
+  width: 45%;
+  margin: 25px auto;
+  font-family: Zeyada;
+  font-size: xx-large; }
+
+.carousel-inner div:hover {
+  opacity: 0.7;
+  transform: scale(0.98); }
+
+h5 {
+  font-size: xx-large; }
+
+/*Pictures of Blogs*/
+.blogPics {
+  display: grid;
+  grid-template-areas: "blogPics__1", "blogPics__2";
+  grid-template-columns: unquote repeat(3, 6fr);
+  margin: 30px; }
+  .blogPics__3 {
+    display: flex;
+    grid-template-areas: "blogPics__3";
+    grid-template-columns: unquote repeat(0, 2fr); }
+  .blogPics:hover {
+    opacity: 0.7;
+    transform: unquote scale(0.98); }
+  .blogPics__1 .blogPics__2 .blogPics__3 {
+    width: 98%;
+    align-items: center; }
+  .blogPics__tittles {
+    font-family: "Zeyada";
+    font-size: x-large; }
+
+.firstblog {
+  display: flex;
+  align-items: center; }
+  .firstblog__pic {
+    max-width: 30%;
+    padding: 0.10rem;
+    display: block;
+    margin: 30px; }
+  .firstblog__intro {
+    font-size: medium;
+    font-family: Gideon Roman; }
+
+.contact__Grid {
+  display: flex;
+  justify-content: center; }
+
+.contact__Grid__Pic {
+  max-width: 95%;
+  padding: 0.20rem;
+  margin: 20px;
+  align-content: center;
+  justify-content: center; }
+
+/*Contact form*/
+.contactMe {
+  text-align: center;
+  font-size: x-large;
+  text-decoration: none;
+  letter-spacing: 0.08rem;
+  font-family: "Zeyada"; }
+  .contactMe .contactMeStyle {
+    text-align: center;
+    font-size: medium;
+    font-family: "Zeyada";
+    text-decoration: none;
+    letter-spacing: 0.08rem; }
+  .contactMe .span {
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+    letter-spacing: 0.08rem;
+    font-family: "Nanum Myeongjo";
+    display: inline block; }
+
+.contactForm {
+  text-align: center;
+  font-family: "Nanum Myeongjo";
+  font-size: large;
+  width: 75%;
+  margin: 3rem auto;
+  padding: 0.05rem 0.05rem;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  margin: auto; }
+  .contactForm form input, .contactForm textarea {
+    margin: 1rem;
+    padding: 0.05rem;
+    font-family: "Nanum Myeongjo";
+    width: auto; }
+  .contactForm form input[type="Submit"] {
+    padding: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    border-color: #e094aa;
+    border-width: 2.5px;
+    border-style: solid;
+    background-color: transparent;
+    font-family: "Europa";
+    font-weight: 150;
+    text-transform: uppercase;
+    letter-spacing: .20em;
+    width: 150px;
+    height: auto; }
+  .contactForm .form input:focus, .contactForm textarea:focus {
+    outline-color: #f9bec7; }
+  .contactForm .form textarea {
+    height: 5rem; }
+  .contactForm .form input:focus, .contactForm textarea:focus {
+    outline-color: #f9bec7; }
+  .contactForm .form textarea {
+    height: 5rem; }
+  .contactForm .parrafoContact {
+    font-family: "Nanum Myeongjo";
+    font-size: medium; }
+  .contactForm .ContactMe {
+    text-align: center;
+    font-family: "Zeyada";
+    font-size: x-large; }
