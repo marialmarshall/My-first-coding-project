@@ -1,11 +1,5 @@
 /*Variables */
 /*Mapas*/
-nav ul li, nav ul li a {
-  display: flex;
-  margin: auto;
-  justify-content: center; }
-
-/*Mixings para aplicar  li a */
 /* Encabezados y menu navegable*/
 header h1 {
   font-family: "Zeyada";
@@ -131,7 +125,7 @@ h5 {
   .blogPics:hover {
     opacity: 0.7;
     transform: scale(0.98); }
-  .blogPics__1 .blogPics__2 .blogPics__3 {
+  .blogPics__1, .blogPics__2, .blogPics__3 {
     width: 98%;
     align-items: center; }
   .blogPics__tittles {
@@ -227,3 +221,10 @@ h5 {
     text-align: center;
     font-family: "Zeyada";
     font-size: x-large; }
+
+nav ul li, nav ul li a {
+  display: flex;
+  margin: auto;
+  justify-content: center; }
+
+/*Mixings para aplicar  li a */

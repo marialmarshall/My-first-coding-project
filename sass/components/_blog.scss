@@ -4,20 +4,19 @@
     grid-template-areas: "blogPics__1", "blogPics__2";
     grid-template-columns: unquote('repeat(3, 6fr)');
     margin: 30px;   
-    
     &__3{
      display: flex;
      grid-template-areas: "blogPics__3";
      grid-template-columns:unquote('repeat(0, 2fr)');
 
-    }
+     }
     &:hover{
      opacity: 0.7;
      transform: unquote('scale(0.98)');
 
     }
 
-    &__1 &__2 &__3{
+    &__1, &__2, &__3{
      width: $blogpics-width;
      align-items: center;
     }
@@ -28,8 +27,3 @@
     }     
 
 }
-
-
-
-
-

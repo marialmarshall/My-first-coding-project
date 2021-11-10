@@ -11,7 +11,15 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.15"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marialmarshall/Web-page-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marialmarshall/Web-page-/issues"
+  },
+  "homepage": "https://github.com/marialmarshall/Web-page-#readme",
   "description": ""
 }
