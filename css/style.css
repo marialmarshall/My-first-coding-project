@@ -12,17 +12,25 @@ header h1 {
 nav {
   text-decoration: none;
   font-family: "Toma SansSB";
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: medium;
   font-family: 'Toma SansSB'; }
   nav ul {
     display: flex;
     margin: auto;
-    color: black;
+    color: #365d86;
     text-decoration: none;
-    font-family: "Toma SansSB";
-    justify-content: space-evenly;
-    font-size: medium; }
+    font-family: 400 0.75 rem/1.5 Montserrat;
+    justify-content: space-between;
+    font-size: medium;
+    background-color: none;
+    font-weight: 500;
+    line-height: 2px;
+    border-bottom: 1.5px solid #384c61;
+    border-top: 1.5px solid #384c61;
+    padding: 10.56px 0;
+    letter-spacing: 3px;
+    width: 100%; }
     nav ul li a:hover {
       color: #f08080;
       font-family: inherit; }
@@ -30,10 +38,6 @@ nav {
 .body {
   font-family: inherit;
   line-height: 10px; }
-
-/*Color que cambia donde nos posicionamos en el menu navegable*/
-.linkActive {
-  color: #f08080; }
 
 /*Sticky*/
 header {
@@ -46,7 +50,7 @@ header {
 .portalImg {
   display: block;
   margin: auto;
-  max-width: 95%; }
+  max-width: 85%; }
 
 .mySocials {
   text-align: center;
@@ -71,23 +75,38 @@ p {
   display: flex;
   align-items: center; }
   .aboutme__pic {
-    max-width: 30%;
-    padding: 0.10rem;
-    display: block;
-    margin: 30px; }
+    max-width: 40%;
+    padding: 0.25rem;
+    position: relative;
+    margin: 20px;
+    align-items: center; }
   .aboutme__intro {
     font-size: medium;
     font-family: Gideon Roman;
-    animation-duration: 1s;
-    animation-name: slidein; }
+    color: grey;
+    width: 65%;
+    height: 15%;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    margin: 0.80rem; }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
+/*Mobile version*/
+@media screen and (max-width: 480px) {
+  .aboutme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .aboutme__pic {
+    max-width: 80%;
+    height: 150%;
+    margin: auto;
+    align-items: center; }
+  .aboutme__intro {
+    margin: auto;
+    height: auto;
+    font-size: x-small;
+    width: 75%;
+    padding-left: 0.5rem; } }
 
 /*Bootsrap menu hamburguesa*/
 h2 {
@@ -115,41 +134,31 @@ h5 {
 /*Pictures of Blogs*/
 .blogPics {
   display: grid;
-  grid-template-areas: "blogPics__1", "blogPics__2";
-  grid-template-columns: repeat(3, 6fr);
+  grid-template-areas: "blogPics__1", "blogPics__2","blogPics__3","blogPics__4";
+  grid-template-columns: repeat(2, 4fr);
   margin: 30px; }
-  .blogPics__3 {
-    display: flex;
-    grid-template-areas: "blogPics__3";
-    grid-template-columns: repeat(0, 2fr); }
-  .blogPics:hover {
-    opacity: 0.7;
-    transform: scale(0.98); }
-  .blogPics__1, .blogPics__2, .blogPics__3 {
+  .blogPics__1, .blogPics__2, .blogPics__3, .blogPics__4 {
     width: 98%;
     align-items: center; }
+    .blogPics__1:hover, .blogPics__2:hover, .blogPics__3:hover, .blogPics__4:hover {
+      opacity: 0.7;
+      transform: scale(0.98); }
   .blogPics__tittles {
     font-family: "Zeyada";
     font-size: x-large; }
 
-.firstblog {
-  display: flex;
-  align-items: center; }
-  .firstblog__pic {
-    max-width: 30%;
-    padding: 0.10rem;
-    display: block;
-    margin: 30px; }
-  .firstblog__intro {
-    font-size: medium;
-    font-family: Gideon Roman; }
+/*Media querys para el telefono*/
+@media only screen and (max-width: 480px) {
+  .blogPics {
+    grid-template-areas: "blogPics__1" "blogPics__2" "blogPics__3" "blogPics__4";
+    grid-template-columns: 1fr; } }
 
 .contact__Grid {
   display: flex;
   justify-content: center; }
 
 .contact__Grid__Pic {
-  max-width: 95%;
+  max-width: 85%;
   padding: 0.20rem;
   margin: 20px;
   align-content: center;
@@ -172,7 +181,7 @@ h5 {
     text-align: center;
     font-size: x-large;
     text-decoration: none;
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.10rem;
     font-family: "Nanum Myeongjo";
     display: inline block; }
 
@@ -180,18 +189,19 @@ h5 {
   text-align: center;
   font-family: "Nanum Myeongjo";
   font-size: large;
-  width: 75%;
-  margin: 3rem auto;
-  padding: 0.05rem 0.05rem;
-  border-radius: 0.5rem;
-  font-weight: 400;
+  width: 65%;
+  margin: 2rem 2rem;
+  padding: 1rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 200;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   margin: auto; }
   .contactForm form input, .contactForm textarea {
     margin: 1rem;
     padding: 0.05rem;
     font-family: "Nanum Myeongjo";
-    width: auto; }
+    width: auto;
+    height: 100px; }
   .contactForm form input[type="Submit"] {
     padding: 15px;
     font-weight: 300;
@@ -221,6 +231,39 @@ h5 {
     text-align: center;
     font-family: "Zeyada";
     font-size: x-large; }
+
+/*Mobile version*/
+@media screen and (max-width: 480px) {
+  .contact__Grid__Pic {
+    width: max-content;
+    display: block; }
+  .contactMeStyle {
+    font-size: x-small; }
+  .span {
+    font-size: x-small; }
+  .contactForm {
+    font-size: small;
+    width: 65%;
+    font-weight: 50; }
+  form input, textarea {
+    height: 60px;
+    margin: 1rem;
+    padding: 0.20rem;
+    font-family: "Nanum Myeongjo";
+    width: auto;
+    height: 100px; }
+  form input[type="Submit"] {
+    padding: 10px;
+    font-weight: 150;
+    font-weight: 80;
+    width: 85px; }
+  .form textarea {
+    height: 2rem;
+    padding: 0.20rem; }
+  .parrafoContact {
+    font-size: x-small; }
+  .ContactMe {
+    font-size: x-small; } }
 
 nav ul li, nav ul li a {
   display: flex;

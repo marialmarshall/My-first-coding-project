@@ -2,32 +2,73 @@
 
 .aboutme{
     display: flex;
-    align-items: center; 
-   
+    align-items: center;  
 
     &__pic{
-     max-width: 30%;
-     padding: 0.10rem; 
-     display:block;
-     margin: 30px;
+     max-width: 40%;
+     padding: 0.25rem; 
+     position: relative;
+     margin: 20px;
+     align-items: center;
+      
     }
+
     &__intro{     
-     font-size: map-get($map: $sizeletter, $key:medio );
+     font-size: map-get($map: $sizeletter, $key:medio);
      font-family:Gideon Roman;
-     animation-duration: 1s;
-     animation-name: slidein;
-    }
+     color:grey;
+     width: 65%;
+     height: 15%;
+     padding-left: 1rem;
+     padding-right: 2.5rem;
+     margin: 0.80rem;
+     
+    }  
 
 }
 
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
+  /*Mobile version*/
+
+  @media screen and (max-width: 480px){
+
+    .aboutme{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
+
+    .aboutme__pic{
+      max-width: 80%;
+      height: 150%;
+      margin: auto;
+      align-items: center;
+      
+       
+     }
+
+    .aboutme__intro{
+      margin: auto;
+      height:auto;
+      font-size: map-get($map: $sizeletter, $key:xchico);
+      width: 75%;
+      padding-left: 0.5rem;
+     
+     
+     
+
+      
+
     }
+
+    
+
+    
+
+    
+    
   }
+
+
+
+  
+    

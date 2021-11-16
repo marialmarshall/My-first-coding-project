@@ -17,18 +17,27 @@ nav{
     $color-letra-menu-nav: black; 
     text-decoration: none;
     font-family: $fontfamily-menu-nav;
-    justify-content: space-evenly; 
+    justify-content: space-between; 
     font-size: map-get($map: $sizeletter, $key:medio );
     font-family: 'Toma SansSB';
 
     ul{
         display: flex;
         margin:  auto;
-        color: black;  
+        color:#365d86;  
         text-decoration: none;
-        font-family: $fontfamily-menu-nav;
-        justify-content: space-evenly; 
+        font-family: 400 0.75 rem/1.5 Montserrat;
+        justify-content: space-between; 
         font-size: map-get($map: $sizeletter, $key:medio );
+        background-color: none;
+        font-weight: 500;
+        line-height: 2px;
+        border-bottom: 1.5px solid #384c61;
+        border-top: 1.5px solid #384c61;
+        padding: 10.56px 0;
+        letter-spacing: 3px;
+        width: 100%;
+       
       
 
         li{
@@ -50,12 +59,10 @@ nav{
 
 .body{
     font-family: $fontfamily-nav;
-    line-height: 10px;;
+    line-height: 10px;
+    
 }
-/*Color que cambia donde nos posicionamos en el menu navegable*/
-.linkActive{
-    color: #f08080;
-}
+
 
 /*Sticky*/
 header {
@@ -69,7 +76,7 @@ header {
 .portalImg{
     display:block;
     margin: auto;
-    max-width: 95%;
+    max-width: 85%;
    
 }
 

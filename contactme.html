@@ -36,7 +36,7 @@
             <h1> By Maria M</h1>
     
         <!-- Menu de navegacion - Hamburguesa wx  / Bootrstrap -->
-     
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"></a>
@@ -64,8 +64,6 @@
               </div>
             </div>
         </nav>
-        
-    
         </header>
 
 
@@ -73,35 +71,33 @@
 
     <div class="contact__Grid">
       <img class = "contact__Grid__Pic"src="multimedia/contactme.jpg" alt="Picture that shows different mailboxes"loading ="lazy">
-   </div>
+    </div>
   
-      <!--Contact form-->
-      <h2 class= "contactMe"> Let's <span>get in touch </span></h2>
-      <form class ="contactForm" action="doc.php" method="post">
+    <!--Contact form-->
+    
+    <form class ="contactForm" action="doc.php" method="post">
+      <div>
+          <h2 class= "contactMe"> Let's get in touch </h2>
+          <label for="name"></label>
+          <input type="text" name ="name" placeholder="Name">
+      </div>
 
-          <div>
-              <label for="name"></label>
-              <input type="text" name ="name" placeholder="Name">
-          </div>
+      <div>
+          <label for="mail"></label>
+          <input type="mail"placeholder= "Enter your e-mail">
+      </div>
 
-          <div>
-              <label for="mail"></label>
-              <input type="mail"placeholder= "Enter your e-mail">
-          </div>
+      <div>
+          <label for="message"></label>
+          <textarea name="message" placeholder= "Message" id="Text" cols="20" rows="20"></textarea>
+      </div>
 
-          <div>
-              <label for="message"></label>
-              <textarea name="message" placeholder= "Message" id="Text" cols="20" rows="20"></textarea>
-          </div>
+      <div>
+          <input type="Submit" value="Submit">
+      </div>
 
-          <div>
-              <input type="Submit" value="Submit">
-          </div>
+    </form>
 
-      </form>
-
-  
-     
     <!-- Pie de pagina -->
     <footer>
         <h4 class="mySocials">Socials</h4> 
@@ -132,7 +128,7 @@
             </a>
         </div>
         <p> Copyright ©2021, Maria M. </p>
-        <p>  Design By Maria M | Photos by Maria M & Unsplash</p>
+        <p> Design By Maria M | Photos by Maria M & Unsplash</p>
         
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
