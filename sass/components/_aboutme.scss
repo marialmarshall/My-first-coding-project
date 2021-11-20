@@ -9,8 +9,7 @@
      padding: 0.25rem; 
      position: relative;
      margin: 20px;
-     align-items: center;
-      
+     align-items: center;   
     }
 
     &__intro{     
@@ -22,15 +21,11 @@
      padding-left: 1rem;
      padding-right: 2.5rem;
      margin: 0.80rem;
-     
     }  
-
 }
 
   /*Mobile version*/
-
-  @media screen and (max-width: 480px){
-
+  @media screen and (max-width: 600px){
     .aboutme{
       display: flex;
       flex-direction: row;
@@ -38,34 +33,19 @@
     }
 
     .aboutme__pic{
-      max-width: 80%;
+      max-width: 85%;
       height: 150%;
-      margin: auto;
-      align-items: center;
-      
-       
-     }
-
-    .aboutme__intro{
-      margin: auto;
-      height:auto;
-      font-size: map-get($map: $sizeletter, $key:xchico);
-      width: 75%;
-      padding-left: 0.5rem;
-     
-     
-     
-
-      
-
+      margin: 25px;
+      align-items: center;     
     }
 
-    
-
-    
-
-    
-    
+    .aboutme__intro{
+      margin: 35px;
+      height:auto;
+      font-size: map-get($map: $sizeletter, $key:chico);
+      width: 100%;
+      padding-left: 0.5rem;
+    }  
   }
 
 

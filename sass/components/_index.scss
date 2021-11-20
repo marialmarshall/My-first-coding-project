@@ -1,6 +1,5 @@
 
 /* Encabezados y menu navegable*/
-
 header{
     h1{
         font-family: $fontfamily-blog-titles-contactme-carousel;
@@ -9,7 +8,6 @@ header{
         padding: 0.10rem;
         margin: 30px;
         font-weight: bolder;
-
     }
 }
 
@@ -38,8 +36,6 @@ nav{
         letter-spacing: 3px;
         width: 100%;
        
-      
-
         li{
             @extend %flexbox; 
 
@@ -55,14 +51,10 @@ nav{
     }
 }
 
-
-
 .body{
     font-family: $fontfamily-nav;
-    line-height: 10px;
-    
+    line-height: 10px;   
 }
-
 
 /*Sticky*/
 header {
@@ -76,8 +68,7 @@ header {
 .portalImg{
     display:block;
     margin: auto;
-    max-width: 85%;
-   
+    max-width: 85%;   
 }
 
 .mySocials{
@@ -92,8 +83,7 @@ header {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin: 10px;
-    
+    margin: 10px;    
 }
 
 p{

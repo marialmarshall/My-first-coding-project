@@ -1,4 +1,3 @@
-
 .contact{
     &__Grid{
         display: flex;
@@ -12,13 +11,10 @@
         align-content: center;
         justify-content: center;
     }
-
 }
 
 /*Contact form*/
-
 .contactMe {
-
     text-align: center;
     font-size: map-get($map: $sizeletter, $key:mediano );
     text-decoration: none;
@@ -34,7 +30,6 @@
     }
 
     .span{
-
         text-align: center;
         font-size: map-get($map: $sizeletter, $key:mediano);
         text-decoration: none;
@@ -42,14 +37,10 @@
         font-family: $fontfamily-h2-contactform-socials;
         display: inline block;
     }
-
-    
-
 }
 
 
 .contactForm{
-  
     text-align: center;
     font-family: $fontfamily-h2-contactform-socials;
     font-size: map-get($map: $sizeletter, $key:intermedio );
@@ -60,7 +51,6 @@
     font-weight: 200;
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     margin:auto;
-
 
     form input,textarea{
         margin: 1rem;
@@ -112,64 +102,63 @@
         font-family: $fontfamily-blog-titles-contactme-carousel;
         font-size: map-get($map: $sizeletter, $key:mediano);
     }
-
 }
 
  /*Mobile version*/
-
  @media screen and (max-width: 480px){
     .contact__Grid__Pic{
-      width:max-content;
-      display: block;
-    }
-    .contactMeStyle{
-      font-size: map-get($map: $sizeletter, $key:xchico);
-        
-    }
-
-    .span{
-           
+        width:max-content;
+        display: block;
+      }
+      .contactMeStyle{
         font-size: map-get($map: $sizeletter, $key:xchico);
-    }
-   
-    .contactForm{
+          
+      }
   
-        font-size: map-get($map: $sizeletter, $key:chico);
-        width: 65%;
-        font-weight: 50;
-    }
+      .span{
+             
+          font-size: map-get($map: $sizeletter, $key:xchico);
+      }
+     
+      .contactForm{
     
-    form input,textarea{
-            height: 60px;
-            margin: 1rem;
-            padding: 0.20rem;
-            font-family: $fontfamily-h2-contactform-socials;
-            width: auto;
-            height: 100px;
-        }
-    
-    form input[type="Submit"] {
-            padding: 10px;
-            font-weight: 150;
-            font-weight: 80;
-            width: 85px;
-    
-        }
-    
-    .form textarea{
-            height: 2rem;
-            padding: 0.20rem;
-        }
-
-    .parrafoContact{
-            font-size: map-get($map: $sizeletter, $key:xchico);
-        }
-    
-    .ContactMe{
-            font-size: map-get($map: $sizeletter, $key:xchico);
-        }
-    
-}
-
-
-
+          font-size: map-get($map: $sizeletter, $key:chico);
+          width: 85%;
+          font-weight: 5;
+      }
+      
+      form input,textarea{
+              height: 30px;
+              margin: 0.50rem;
+              padding: 0.20rem;
+              font-family: $fontfamily-h2-contactform-socials;
+              width: auto;
+              height: 80px;
+          }
+      
+      form input[type="Submit"] {
+              padding: 4px;
+              font-weight: 80;
+              width: 40x;
+              height: 35px;
+      
+          }
+      
+      .form textarea{
+              height: 1rem;
+              padding: 0.40rem;
+          }
+  
+      .parrafoContact{
+              font-size: map-get($map: $sizeletter, $key:medio);
+          }
+      
+      .ContactMe{
+              font-size: map-get($map: $sizeletter, $key:xchico);
+          }
+      
+  }
+  
+  
+  
+  

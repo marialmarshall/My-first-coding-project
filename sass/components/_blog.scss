@@ -5,8 +5,6 @@
     grid-template-columns: unquote('repeat(2, 4fr)');
     margin: 30px;
 
-    
-
     &__1, &__2, &__3, &__4{
      width: $blogpics-width;
      align-items: center;
@@ -14,16 +12,14 @@
       opacity: 0.7;
       transform: unquote('scale(0.98)');
  
-     }
-
+    }
     }
 
     &__tittles{
      font-family: $fontfamily-blog-titles-contactme-carousel;
      font-size: map-get($map: $sizeletter, $key:mediano );
     }  
-    
-  }
+}
 
 /*Media querys para el telefono*/
 @media only screen and (max-width: 480px){
